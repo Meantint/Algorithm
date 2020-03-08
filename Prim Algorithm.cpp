@@ -1,3 +1,7 @@
+// 프림 알고리즘 ( Prim's algorithm )
+// weekly ps
+// https://www.weeklyps.com/entry/%ED%94%84%EB%A6%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Prims-algorithm
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
