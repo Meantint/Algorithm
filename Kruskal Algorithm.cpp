@@ -54,10 +54,10 @@ vector<edge> e;
 int kruskal(int kn) {
 	uf.init(kn + 1);
 	sort(e.begin(), e.end());
-	int ret = 0;	// 간선 가중치의 합의 최솟값
+	int ret = 0;					// 간선 가중치의 합의 최솟값
 	for (auto now : e) {
 		if (!uf.same_set(now.v1, now.v2)) {	// 두 정점이 끊어져 있는가?
-			ret += now.cost;				// 가중치를 ret에 더함
+			ret += now.cost;		// 가중치를 ret에 더함
 			uf.merge(now.v1, now.v2);
 		}
 	}
