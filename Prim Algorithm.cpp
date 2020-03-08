@@ -22,7 +22,7 @@ long long prim(int pn) {
 		selected[pn] = false;
 	}
 
-	dist[1] = 0;	// 1번 노드부터 선택
+	dist[1] = 0;			// 1번 노드부터 선택
 	for (int i = 1; i <= pn; i++) {
 		int now = -1, min_dist = INF;
 
