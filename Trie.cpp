@@ -8,15 +8,15 @@ const int ALPHA = 26;
 int charToNum(char ch) { return ch - 'A'; }
 
 struct Trie {
-    Trie* children[ALPHA];
+    Trie* children[ALPHA];  // 각 알파벳을 저장할 수 있는 Trie Pointer를 만든다.
 
-    bool terminal;
-    Trie()
+    bool terminal;  // 이 노드에서 종료한다면 true, 아니라면 false
+    Trie()          // 생성자
     {
         terminal = false;
         memset(children, 0, sizeof(children));
     }
-    ~Trie()
+    ~Trie()  // 소멸자
     {
         for (int i = 0; i < ALPHA; ++i) {
             if (children[i]) {
@@ -24,6 +24,7 @@ struct Trie {
             }
         }
     }
+    // Trie 구조 안에 문자열을 넣는다.
     void insert(const char* key)
     {
         if (*key == 0) {
@@ -38,6 +39,7 @@ struct Trie {
             children[next]->insert(key + 1);
         }
     }
+    // Trie 구조 안에 원하는 단어가 있는지 찾는다.
     Trie* find(const char* key)
     {
         if (*key == 0) {
@@ -66,10 +68,10 @@ int main()
     const char* test[6] = {"TEST", "APPP", "BANAN", "APPLE", "ABA", "BAB"};
     int idx = 0;
     while (idx != 6) {
-        if (root->find(test[idx]) != 0) {
+        if (root->find(test[idx]) != 0) {  // 원하는 단어가 있다면
             cout << "I can   find " << test[idx] << '\n';
         }
-        else {
+        else {  // 원하는 단어가 없다면
             cout << "I can't find " << test[idx] << '\n';
         }
         ++idx;
