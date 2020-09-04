@@ -84,3 +84,44 @@ int main()
 
     return 0;
 }
+
+// Output Result
+// Now
+// -----------------------------------
+// uf.parent[0] : 0 | uf.rank[0] : 1
+// uf.parent[1] : 1 | uf.rank[1] : 1
+// uf.parent[2] : 2 | uf.rank[2] : 1
+// uf.parent[3] : 3 | uf.rank[3] : 1
+// uf.parent[4] : 4 | uf.rank[4] : 1
+// -----------------------------------
+// uf.merge(2, 3)
+// -----------------------------------
+// uf.parent[0] : 0 | uf.rank[0] : 1
+// uf.parent[1] : 1 | uf.rank[1] : 1
+// uf.parent[2] : 3 | uf.rank[2] : 1
+// uf.parent[3] : 3 | uf.rank[3] : 2
+// uf.parent[4] : 4 | uf.rank[4] : 1
+// -----------------------------------
+// uf.merge(0, 1)
+// -----------------------------------
+// uf.parent[0] : 1 | uf.rank[0] : 1
+// uf.parent[1] : 1 | uf.rank[1] : 2
+// uf.parent[2] : 3 | uf.rank[2] : 1
+// uf.parent[3] : 3 | uf.rank[3] : 2
+// uf.parent[4] : 4 | uf.rank[4] : 1
+// -----------------------------------
+// uf.merge(2, 4)
+// -----------------------------------
+// uf.parent[0] : 1 | uf.rank[0] : 1
+// uf.parent[1] : 1 | uf.rank[1] : 2
+// uf.parent[2] : 3 | uf.rank[2] : 1
+// uf.parent[3] : 3 | uf.rank[3] : 2
+// uf.parent[4] : 3 | uf.rank[4] : 1
+// -----------------------------------
+// uf.merge(0, 2)
+// -----------------------------------
+// uf.parent[0] : 1 | uf.rank[0] : 1
+// uf.parent[1] : 3 | uf.rank[1] : 2
+// uf.parent[2] : 3 | uf.rank[2] : 1
+// uf.parent[3] : 3 | uf.rank[3] : 3
+// uf.parent[4] : 3 | uf.rank[4] : 1
