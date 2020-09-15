@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # BFS
 
 ## 정의
@@ -11,9 +9,9 @@
 
 ## 시간 복잡도(`Time Complexity`)
 
-- 인접 리스트(`Adjacency List`) : $$ O(|V| + |E|) $$
+- 인접 리스트(`Adjacency List`) : `O(|V| + |E|)`
   
-- 인접 행렬(`Adjacency Array`) : $$ O(|V|^2) $$
+- 인접 행렬(`Adjacency Array`) : `O(|V|^2)`
 
 <hr>
 
