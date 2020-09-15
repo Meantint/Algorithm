@@ -1,5 +1,7 @@
 # BFS
 
+<hr>
+
 ## 정의
 
 &nbsp;`BFS`는 너비 우선 탐색(`Breadth First Search`)의 약자이다. `DFS`와 그래프 탐색 방식의 축을 이룬다.
