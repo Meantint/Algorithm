@@ -1,3 +1,25 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+# BFS
+
+## 정의
+
+&nbsp;`BFS`는 너비 우선 탐색(`Breadth First Search`)의 약자이다. `DFS`와 그래프 탐색 방식의 축을 이룬다.
+다익스트라 알고리즘(`Dijkstra's algorithm`)과 프림 알고리즘(`Prim's algorithm`)에 사용되며 주로 최단 경로를 구하는데 사용된다.
+
+<hr>
+
+## 시간 복잡도(`Time Complexity`)
+
+- 인접 리스트(`Adjacency List`) : $$ O(|V| + |E|) $$
+  
+- 인접 행렬(`Adjacency Array`) : $$ O(|V|^2) $$
+
+<hr>
+
+## Code
+
+```C++
 #include <algorithm>
 #include <iostream>
 #include <queue>
@@ -107,3 +129,17 @@ int main()
 
     return 0;
 }
+```
+
+<hr>
+
+## Example
+
+### Input
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Example_Input](images/Example_Input.png)
+
+### Graph
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Example_Graph](images/Example_Graph.png)
+
+### Output
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Example_Output](images/Example_Output.png)
