@@ -43,7 +43,7 @@ vector<int> dijkstra(int start)
 int main()
 {
     cin >> V;
-    adj.resize(V);
+    adj.resize(V + 1);
 
     int n;  // 간선 개수
     cin >> n;
