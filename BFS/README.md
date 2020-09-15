@@ -1,7 +1,3 @@
-# BFS
-
-<hr>
-
 ## 정의
 
 &nbsp;`BFS`는 너비 우선 탐색(`Breadth First Search`)의 약자이다. `DFS`와 그래프 탐색 방식의 축을 이룬다.
@@ -9,11 +5,11 @@
 
 <hr>
 
-## 시간 복잡도(`Time Complexity`)
+## 시간 복잡도(Time Complexity)
 
-- 인접 리스트(`Adjacency List`) : `O(|V| + |E|)`
+- 인접 리스트(Adjacency List) : `O(|V| + |E|)`
   
-- 인접 행렬(`Adjacency Array`) : `O(|V|^2)`
+- 인접 행렬(Adjacency Array) : `O(|V|^2)`
 
 <hr>
 
