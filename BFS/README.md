@@ -1,7 +1,6 @@
 ## BFS
 
-&nbsp;`BFS`는 너비 우선 탐색(`Breadth First Search`)의 약자이다. `DFS`와 그래프 탐색 방식의 축을 이룬다.
-다익스트라 알고리즘(`Dijkstra's algorithm`)과 프림 알고리즘(`Prim's algorithm`)에 사용되며 주로 최단 경로를 구하는데 사용된다.
+&nbsp;`BFS`는 너비 우선 탐색(`Breadth First Search`)의 약자이다. `DFS`와 그래프 탐색 방식의 축을 이룬다. 다익스트라 알고리즘(`Dijkstra's algorithm`)과 프림 알고리즘(`Prim's algorithm`)에 사용되며 주로 최단 경로를 구하는데 사용된다.
 
 <hr>
 
@@ -139,3 +138,5 @@ int main()
 
 ### Output
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Example_Output](images/Example_Output.png)
+
+<hr>
